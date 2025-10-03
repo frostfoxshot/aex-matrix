@@ -322,9 +322,8 @@ describe("ContentMessages", () => {
         it("handles MSC4335 M_USER_LIMIT_EXCEEDED error and shows info URL", async () => {
             mocked(client.uploadContent).mockRejectedValue(
                 new MatrixError({
-                    "errcode": "M_UNKNOWN",
+                    "errcode": "ORG.MATRIX.MSC4335_USER_LIMIT_EXCEEDED",
                     "error": "User limit exceeded",
-                    "org.matrix.msc4335.errcode": "M_USER_LIMIT_EXCEEDED",
                     "org.matrix.msc4335.info_url": "https://example.com/info",
                 }),
             );

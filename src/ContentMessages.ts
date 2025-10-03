@@ -662,8 +662,7 @@ export default class ContentMessages {
                     });
                 } else if (
                     unwrappedError instanceof MatrixError &&
-                    unwrappedError.errcode === "M_UNKNOWN" &&
-                    unwrappedError.data["org.matrix.msc4335.errcode"] === "M_USER_LIMIT_EXCEEDED" &&
+                    unwrappedError.errcode === "ORG.MATRIX.MSC4335_USER_LIMIT_EXCEEDED" &&
                     typeof unwrappedError.data["org.matrix.msc4335.info_url"] === "string"
                 ) {
                     // Support for experimental MSC4335 M_USER_LIMIT_EXCEEDED error
