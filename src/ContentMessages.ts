@@ -659,15 +659,17 @@ export default class ContentMessages {
                 if (
                     unwrappedError instanceof MatrixError &&
                     unwrappedError.errcode === "ORG.MATRIX.MSC4335_USER_LIMIT_EXCEEDED" &&
-                    typeof unwrappedError.data["org.matrix.msc4335.info_uri"] === "string" &&
-                    typeof unwrappedError.data["org.matrix.msc4335.soft_limit"] === "boolean"
+                    typeof unwrappedError.data["org.matrix.msc4335.info_uri"] === "string"
                 ) {
                     // Support for experimental MSC4335 M_USER_LIMIT_EXCEEDED error
+                    const softLimit = typeof unwrappedError.data["org.matrix.msc4335.soft_limit"] === "boolean"
+                        ? unwrappedError.data["org.matrix.msc4335.soft_limit"]
+                        : false;
                     Modal.createDialog(MSC4335UserLimitExceededDialog, {
                         title: _t("upload_failed_title"),
                         error: {
                             infoUri: unwrappedError.data["org.matrix.msc4335.info_uri"],
-                            increaseUri: unwrappedError.data["org.matrix.msc4335.soft_limit"] ? unwrappedError.data["org.matrix.msc4335.increase_uri"] : undefined,
+                            increaseUri: softLimit ? unwrappedError.data["org.matrix.msc4335.increase_uri"] : undefined,
                         },
                     });
                 } else {

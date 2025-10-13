@@ -324,8 +324,7 @@ describe("ContentMessages", () => {
                 new MatrixError({
                     "errcode": "ORG.MATRIX.MSC4335_USER_LIMIT_EXCEEDED",
                     "error": "User limit exceeded",
-                    "org.matrix.msc4335.info_uri": "https://example.com/info",
-                    "org.matrix.msc4335.soft_limit": false,
+                    "org.matrix.msc4335.info_uri": "https://example.com/info"
                 }),
             );
             const file = new File([], "fileName", { type: "image/jpeg" });
