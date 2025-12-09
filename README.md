@@ -1,13 +1,67 @@
-[![Chat](https://img.shields.io/matrix/element-web:matrix.org?logo=matrix)](https://matrix.to/#/#element-web:matrix.org)
-![Tests](https://github.com/element-hq/element-web/actions/workflows/tests.yaml/badge.svg)
-![Static Analysis](https://github.com/element-hq/element-web/actions/workflows/static_analysis.yaml/badge.svg)
-[![Localazy](https://img.shields.io/endpoint?url=https%3A%2F%2Fconnect.localazy.com%2Fstatus%2Felement-web%2Fdata%3Fcontent%3Dall%26title%3Dlocalazy%26logo%3Dtrue)](https://localazy.com/p/element-web)
-[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=element-web&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=element-web)
-[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=element-web&metric=coverage)](https://sonarcloud.io/summary/new_code?id=element-web)
-[![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=element-web&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=element-web)
-[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=element-web&metric=bugs)](https://sonarcloud.io/summary/new_code?id=element-web)
+## Overview
 
-# Element
+**Frostrinne** is an in-development, **modified fork of the Element web client**, created and maintained by the **Aexel Group**. It builds upon the robust foundation of Element while introducing unique customizations, enhancements, and experimental features for advanced Matrix communication.
+
+Designed for developers, communities, and enthusiasts, Frostrinne aims to provide a **faster, more streamlined, and highly customizable web client** for Matrix, while retaining all core functionality such as messaging, end-to-end encryption, threads, spaces, and VoIP support.
+
+---
+
+## Key Features
+
+* **Development-stage fork**: Includes modifications, bug fixes, and custom features not present in standard Element.
+* **End-to-End Encryption (E2EE)**: Secure your conversations across all rooms and devices.
+* **Spaces & Threads**: Organize communities and discussions efficiently.
+* **1:1 and Group Calls**: Voice and video calls via Matrix/Jitsi.
+* **Custom Themes & Labs Features**: Experiment with enhanced UI and features introduced by the Aexel Group.
+* **Cross-Platform**: Works in modern browsers and can be packaged as a desktop app with Electron.
+* **Open for Contributions**: The fork encourages community feedback.
+
+---
+
+## Supported Environments
+
+* **Supported**: Latest 2 major versions of Chrome, Firefox, Edge; last 2 versions of Safari; official Electron builds.
+* **Best Effort**: Extended Stable/ESR versions of browsers.
+* **Community Supported**: Mobile web on current stable Chrome, Firefox, and Safari on Android/iOS.
+* **Not Supported**: All other environments.
+
+---
+
+## Getting Started
+
+To try Frostrinne:
+
+* **Hosted instance (experimental):** no website yet
+
+For self-hosting and development:
+
+```bash
+not complete yet. not possible
+```
+
+---
+
+## Security Considerations
+
+* **Separate Domains**: Frostrinne should be hosted on a domain separate from your homeserver to prevent XSS risks.
+* **Recommended Headers**: Add `X-Frame-Options`, `X-Content-Type-Options`, `X-XSS-Protection`, and `Content-Security-Policy` headers for basic web security.
+
+---
+
+## Running as a Desktop App
+
+Frostrinne can be packaged as an Electron-based desktop app. Build instructions are included in the `desktop/` folder.
+
+---
+
+## License
+
+Frostrinne is licensed under the same multi-license terms as Element, with modifications by the **Aexel Group**. Usage can follow AGPL/GPL licenses or a commercial license agreement depending on the use case.
+
+
+
+
+# Element Original Readme file
 
 Element (formerly known as Vector and Riot) is a Matrix web client built using the [Matrix
 JS SDK](https://github.com/matrix-org/matrix-js-sdk).
