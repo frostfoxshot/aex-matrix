@@ -31,7 +31,7 @@ Designed for developers, communities, and enthusiasts, Frostrinne aims to provid
 
 To try Frostrinne:
 
-* **Hosted instance (experimental):** no website yet
+* **Hosted instance (experimental):** https://frostrinne.aexelgroup.app
 
 For self-hosting and development:
 
