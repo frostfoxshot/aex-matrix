@@ -1,4 +1,5 @@
 /*
+Copyright 2025 Ethan Dower  <ethan.dower@icloud.com>
 Copyright 2024 New Vector Ltd.
 Copyright 2019 Michael Telatynski <7t3chguy@gmail.com>
 Copyright 2019 The Matrix.org Foundation C.I.C.
@@ -27,7 +28,7 @@ import { _t } from "./languageHandler";
 import SettingsStore from "./settings/SettingsStore";
 import ThemeWatcher from "./settings/watchers/ThemeWatcher";
 
-export const DEFAULT_THEME = "light";
+export const DEFAULT_THEME = "dark";
 const HIGH_CONTRAST_THEMES: Record<string, string> = {
     light: "light-high-contrast",
 };
