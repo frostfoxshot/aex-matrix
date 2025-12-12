@@ -38,7 +38,7 @@ const cssThemes = {
     "theme-dark": "./res/themes/dark/css/dark.pcss",
     "theme-light-custom": "./res/themes/light-custom/css/light-custom.pcss",
     "theme-dark-custom": "./res/themes/dark-custom/css/dark-custom.pcss",
-    "aex-default": "./res/themes/aex-default/css/aex-default.pcss",
+    "theme-aex-default": "./res/themes/aex-default/css/aex-default.pcss",
 };
 
 // See docs/customisations.md
